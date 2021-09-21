@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gerador de QRCode</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        * {
+            font-family: Montserrat;
+        }
+
+        body {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">LPOO - Gerador QR Code</h1>
+        <hr>
+        <h4>Texto de Entrada</h4>
+        <hr>
+        <p>Informe o texto abaixo e clique em Gerar!</p>
+        <form class="form" action="/scan" method="POST">
+            <input name="url" class="form-control" placeholder="URL ou Texto" type="text" required>
+            <br>
+            <button type="submit" class="btn btn-primary" value="Gerar QR">Gerar</button>
+        </form>
+    </div>
+</body>
+
+</html>

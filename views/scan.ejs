@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Gerador de QRCode</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+     <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        * {
+            font-family: Montserrat;
+        }
+        
+        .card {
+            margin: 0 auto;
+            /* Added */
+            float: none;
+            /* Added */
+            margin-bottom: 10px;
+            /* Added */
+        }
+    </style>
+  
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Gerador QR Code</h1>
+        <hr>
+        <img src=<%=src%> alt="QR Code Image">
+        <p>Faça o escaneamento do QRCode para ver os dados!</p>
+        <a href="/"><button type="button" class="btn btn-primary">Voltar</button></a>
+        <br>
+    </div>
+</body>
+</html>
